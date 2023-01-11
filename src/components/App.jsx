@@ -13,7 +13,7 @@ export default function App() {
   const options = ['good', 'neutral', 'bad']
   const countTotalFeedback = good + neutral + bad;
   const positiveFeedbackPercentage = () => {
-    return Math.round((good/countTotalFeedback()) * 100)
+    return Math.round((good/countTotalFeedback) * 100)
   }
   const valueIncrement = option => {
     switch (option) {
